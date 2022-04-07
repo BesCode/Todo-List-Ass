@@ -7,12 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To-Do List</title>
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <div id="signIn">
+    <div id="form">
 
         <h1>Sign in <span></span></h1>
 
@@ -35,10 +37,31 @@
             </div>
 
             <div class="submitButton">
-                <button type="submit" id="todo">SUBMIT</button>
+                <button type="submit">SUBMIT</button>
             </div>
 
         </form>
+
+
+
+    </div>
+
+    <div id="todoList">
+        <h1>My Todo List</h1>
+        <h1><span class="greet">WELCOME</span></h1>
+
+        <div class="inputTask">
+            <input type="text" id="addTaskInput" placeholder="What task do you want to add?">
+            <button class="addTask">Add Task</button>
+        </div>
+
+        <div class="taskList">
+            <input type="text" id="todoInput">
+            <button class="edit">EDIT</button>
+            <button class="delete">DELETE</button>
+        </div>
+
+
     </div>
 
 </body>
